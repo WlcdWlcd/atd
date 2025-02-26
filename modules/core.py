@@ -7,7 +7,7 @@ class converter():
         self.sampling_rate = sampling_rate
 
     def get_pandas(self):
-        return pandas.DataFrame(self.waveform)
+        return pandas.DataFrame(self.waveform).transpose()
 
     def get_sampling_rate(self):
         return self.sampling_rate
